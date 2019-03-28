@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2308f13-7a34-4fb1-acd4-36e34ea8c0e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AUTO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AUTO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login RIGSpace.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCalc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login RigSpace admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login RigSpace admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Login RigSpace admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -126,12 +123,89 @@
       <option name="ipnbPort" value="8888" />
       <method v="2" />
     </configuration>
+    <configuration name="Report_Create" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AUTO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Login RIGSpace.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for TestCalc.LoginRIGSpace.test_login_rigspace" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUTO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestCalc.LoginRIGSpace.test_login_rigspace&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in Login RigSpace admin.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUTO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Login RigSpace admin.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in TestCalc.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUTO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/TestCalc.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in asda.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUTO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/venv/asda.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Report_Create" />
-      <item itemvalue="Python tests.Unittests for TestCalc.LoginRIGSpace.test_login_rigspace" />
-      <item itemvalue="Python tests.Unittests in Login RigSpace admin.py" />
       <item itemvalue="Python tests.Unittests in TestCalc.py" />
+      <item itemvalue="Python tests.Unittests for TestCalc.LoginRIGSpace.test_login_rigspace" />
       <item itemvalue="Python tests.Unittests in asda.py" />
+      <item itemvalue="Python tests.Unittests in Login RigSpace admin.py" />
     </list>
     <recent_temporary>
       <list>
@@ -154,15 +228,17 @@
       <option name="presentableId" value="Default" />
       <updated>1552314278901</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1553763799586</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553763799587</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_TestCalc_py - 2019.03.27 at 18h 03m 05s.xml">
-      <configuration name="Unittests in TestCalc.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_TestCalc_py - 2019.03.27 at 18h 03m 44s.xml">
-      <configuration name="Unittests in TestCalc.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_TestCalc_py - 2019.03.27 at 18h 06m 42s.xml">
       <configuration name="Unittests in TestCalc.py" configurationId="tests" />
     </history-entry>
@@ -185,6 +261,12 @@
       <configuration name="Unittests in Login RigSpace admin.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_Login_RigSpace_admin_py - 2019.03.28 at 11h 42m 28s.xml">
+      <configuration name="Unittests in Login RigSpace admin.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Login_RigSpace_admin_py - 2019.03.28 at 13h 31m 10s.xml">
+      <configuration name="Unittests in Login RigSpace admin.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Login_RigSpace_admin_py - 2019.03.28 at 13h 41m 39s.xml">
       <configuration name="Unittests in Login RigSpace admin.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -260,6 +342,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -290,8 +376,8 @@
     <entry file="file://$PROJECT_DIR$/TestCalc.py" />
     <entry file="file://$PROJECT_DIR$/Login RigSpace admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
