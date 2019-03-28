@@ -2,11 +2,19 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 class LoginRIGSpace(unittest.TestCase):
     def setUp(self):
         # Choose browser if needed (IE,Chrome)
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(10)
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     def test_login_rigspace(self):
         driver = self.driver
         # Open rig_space on standalone and clear the cookies
@@ -16,6 +24,7 @@ class LoginRIGSpace(unittest.TestCase):
         # Enter username
         usr = driver.find_element_by_name("username")
         usr.send_keys("admin")
+<<<<<<< Updated upstream
         usr.send_keys(Keys.TAB)
         # Enter password
         pas = driver.find_element_by_name("password")
@@ -23,6 +32,15 @@ class LoginRIGSpace(unittest.TestCase):
         pas.send_keys(Keys.TAB)
         # Click on button "Submit"
         pas.send_keys(Keys.RETURN)
+=======
+        # Enter password
+        pas = driver.find_element_by_name("password")
+        pas.send_keys("1")
+        # Click on button "Submit"
+        submit = driver.find_element_by_css_selector("button[type]")
+        submit.send_keys(Keys.RETURN)
+
+>>>>>>> Stashed changes
     def tearDown(self):
         self.driver.close()
 
