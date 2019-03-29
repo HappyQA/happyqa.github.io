@@ -1,7 +1,6 @@
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
 # Choose browser if needed (IE,Chrome)
 class LoginRIGSpace(unittest.TestCase):
     def setUp(self):
