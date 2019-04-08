@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AUTO.iml" filepath="$PROJECT_DIR$/.idea/AUTO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RigSpace.iml" filepath="$PROJECT_DIR$/.idea/RigSpace.iml" />
     </modules>
   </component>
 </project>

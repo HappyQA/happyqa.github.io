@@ -1,4 +1,5 @@
 package Admin;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -7,7 +8,7 @@ import static environment.AuthorizationPage.*;
 
 public class CreateGroup {
     @Before
-    public void SetUp() throws Exception {
+    public void setUp() throws Exception {
         clearBrowserCookies();
         open("http://localhost:8082/admin/");
         login("admin", "1");
@@ -20,5 +21,10 @@ public class CreateGroup {
         $(By.xpath("//*[@id=\"mat-input-0\"]")).sendKeys("Тестовая группа");
         $(By.xpath("//*[@id=\"mat-checkbox-1\"]")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/app-manage/app-nav-root/div/app-group/app-group-card/div/app-group-form/form/div/button")).click();
+    }
+    @After
+    public void tearDown() throws Exception {
+        clearBrowserCookies();
+        close();
     }
 }
