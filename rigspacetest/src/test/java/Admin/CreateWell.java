@@ -1,5 +1,6 @@
 package Admin;
 import static utilites.AuthorizationPage.*;
+import com.codeborne.selenide.Selenide;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.After;
@@ -26,6 +27,7 @@ public class CreateWell {
         selectContains("Недропользователь", "Тестовые");
         selectContains("Назначение", "Тестовые");
         $(By.xpath("//*[@id=\"main-content\"]/div/app-wells/app-nav-root/div/app-well/app-well-card/div/app-well-form/form/div[2]/button")).click();
+        Selenide.screenshot("1.png");
     }
     @After
     public void tearDown () throws Exception {
