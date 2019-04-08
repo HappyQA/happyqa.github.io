@@ -4,8 +4,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
-import static environment.AuthorizationPage.login;
-import static environment.AuthorizationPage.logout;
+import static utilites.AuthorizationPage.login;
+import static utilites.AuthorizationPage.logout;
 
 public class LoginRigSpace {
     @Before

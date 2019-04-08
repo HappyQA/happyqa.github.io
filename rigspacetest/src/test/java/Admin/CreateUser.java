@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
-import static environment.AuthorizationPage.login;
+import static utilites.AuthorizationPage.login;
 
 public class CreateUser {
     @Before

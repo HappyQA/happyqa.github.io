@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
-import static environment.AuthorizationPage.*;
+import static utilites.AuthorizationPage.*;
 
 public class CreateEvent {
     @Before

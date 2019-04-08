@@ -1,4 +1,4 @@
-package environment;
+package utilites;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 

@@ -4,13 +4,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
-import static environment.AuthorizationPage.*;
+import static utilites.AuthorizationPage.*;
 
 public class CreateRole {
     @Before
     public void setUp() throws Exception {
         clearBrowserCookies();
-        open("http://localhost:8082/admin/");
+        open("http://standalone.rig.space/admin/");
         login("admin", "1");
     }
     @Test
@@ -19,7 +19,7 @@ public class CreateRole {
         $(By.xpath("//*[@id=\"roles\"]/div/div[2]/a/span")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/app-manage/app-nav-root/div/app-role/app-role-card/div/app-role-form/form/div[1]/div[2]/app-input/mat-form-field")).click();
         $(By.xpath("//*[@id=\"mat-input-0\"]")).sendKeys("Тестовая роль");
-        $(By.xpath("//*[@id=\"mat-checkbox-109-input\"]")).click();
+        $(By.xpath("//*[@id=\"mat-checkbox-109\"]")).click();
         $(By.xpath("//*[@id=\"mat-checkbox-112\"]")).click();
         $(By.xpath("//*[@id=\"mat-checkbox-115\"]")).click();
         $(By.xpath("//*[@id=\"mat-checkbox-118\"]")).click();

@@ -1,10 +1,11 @@
 package Admin;
-import static environment.AuthorizationPage.*;
+import static utilites.AuthorizationPage.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.After;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
+import static utilites.MatSelect.*;
 
 public class CreateWell {
     @Before
@@ -20,10 +21,11 @@ public class CreateWell {
         $(By.xpath("//*[@id=\"wells\"]/div/div[2]/a/span")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/app-wells/app-nav-root/div/app-well/app-well-card/div/app-well-form/form/div[1]/app-input/mat-form-field")).click();
         $(By.xpath("//*[@id=\"mat-input-0\"]")).sendKeys("Тестовая скважина");
-        $(By.xpath("//*[@id=\"main-content\"]/div/app-wells/app-nav-root/div/app-well/app-well-card/div/app-well-form/form/div[1]/app-select[1]/mat-form-field")).click();
-        $(By.xpath("/html/body/div[3]")).click();
-        $(By.xpath("//*[@id=\"mat-select-1\"]/div/div[1]/span")).click();
-        $(By.xpath("/html/body/div[3]")).click();
+        selectContains("Месторождение", "Тестовые");
+        selectContains("Площадь", "Тестовые");
+        selectContains("Недропользователь", "Тестовые");
+        selectContains("Назначение", "Тестовые");
+        $(By.xpath("//*[@id=\"main-content\"]/div/app-wells/app-nav-root/div/app-well/app-well-card/div/app-well-form/form/div[2]/button")).click();
     }
     @After
     public void tearDown () throws Exception {
