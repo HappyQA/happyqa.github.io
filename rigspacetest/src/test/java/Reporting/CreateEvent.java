@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.*;
+import static utilites.MatSelect.*;
 
 public class CreateEvent {
     @Before
@@ -19,8 +20,7 @@ public class CreateEvent {
         $(By.xpath("/html/body/app-root/lib-root/mat-sidenav-container/mat-sidenav/div/lib-nav-list/mat-nav-list/a[3]/div")).click();
         $(By.xpath("//*[@id=\"events\"]/div/div[2]/a")).click();
         $(By.xpath("//*[@id=\"mat-input-0\"]")).sendKeys("Тестовый");
-        $(By.xpath("//*[@id=\"mat-select-2\"]/div/div[1]/span")).click();
-        $(By.xpath("//*[@id=\"mat-option-6\"]/span")).click();
+        selectMatContains("Форма рапорта", "Форма суточного рапорта");
         $(By.xpath("//*[@id=\"main-content\"]/div/ts-directory/app-nav-root/div/ts-eventtype/ts-eventtype-card/div/ts-eventtype-form/form/div/div[2]/button[2]")).click();
     }
     @After

@@ -1,6 +1,5 @@
 package Admin;
 import static utilites.AuthorizationPage.*;
-import com.codeborne.selenide.Selenide;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.After;
@@ -22,10 +21,10 @@ public class CreateWell {
         $(By.xpath("//*[@id=\"wells\"]/div/div[2]/a/span")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/app-wells/app-nav-root/div/app-well/app-well-card/div/app-well-form/form/div[1]/app-input/mat-form-field")).click();
         $(By.xpath("//*[@id=\"mat-input-0\"]")).sendKeys("Тестовая скважина");
-        selectContains("Месторождение", "Тестовые");
-        selectContains("Площадь", "Тестовые");
-        selectContains("Недропользователь", "Тестовые");
-        selectContains("Назначение", "Тестовые");
+        selectMatContains("Месторождение", "Тестовые");
+        selectMatContains("Площадь", "Тестовые");
+        selectMatContains("Недропользователь", "Тестовые");
+        selectMatContains("Назначение", "Тестовые");
         $(By.xpath("//*[@id=\"main-content\"]/div/app-wells/app-nav-root/div/app-well/app-well-card/div/app-well-form/form/div[2]/button")).click();
     }
     @After
