@@ -28,5 +28,4 @@ public class LoginRigSpace {
         login("", "");
         $(By.id("mat-error-0")).shouldHave(text("Обязательное поле"));
     }
-
 }

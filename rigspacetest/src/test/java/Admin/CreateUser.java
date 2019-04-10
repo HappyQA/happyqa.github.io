@@ -22,7 +22,6 @@ public class CreateUser {
         $(By.xpath("//*[@id=\"mat-input-3\"]")).sendKeys("AUTOTEST@mail.ru");
         $(By.xpath("//*[@id=\"main-content\"]/div/app-manage/app-nav-root/div/app-user/app-user-card/div/app-user-form/form/div[2]/button/span")).click();
     }
-
     @After
     public void tearDown() throws Exception {
         clearBrowserCookies();
