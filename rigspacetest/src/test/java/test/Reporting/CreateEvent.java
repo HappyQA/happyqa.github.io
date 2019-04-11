@@ -1,4 +1,4 @@
-package Reporting;
+package test.Reporting;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package Admin;
+package test.Admin;
 import static utilites.AuthorizationPage.*;
 import org.junit.Before;
 import org.junit.Test;
