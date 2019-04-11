@@ -19,13 +19,13 @@ public class CreateRole {
         $(By.xpath("//*[@id=\"roles\"]/div/div[2]/a/span")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/app-manage/app-nav-root/div/app-role/app-role-card/div/app-role-form/form/div[1]/div[2]/app-input/mat-form-field")).click();
         $(By.xpath("//*[@id=\"mat-input-0\"]")).sendKeys("Тестовая роль");
-        $(By.xpath("//*[@id=\"mat-checkbox-109\"]")).click();
-        $(By.xpath("//*[@id=\"mat-checkbox-112\"]")).click();
-        $(By.xpath("//*[@id=\"mat-checkbox-115\"]")).click();
-        $(By.xpath("//*[@id=\"mat-checkbox-118\"]")).click();
-        $(By.xpath("//*[@id=\"mat-checkbox-121\"]")).click();
-        $(By.xpath("//*[@id=\"mat-checkbox-124\"]")).click();
-        $(By.xpath("//*[@id=\"mat-checkbox-127\"]")).click();
+        $(By.xpath("//*[@id=\"mat-checkbox-3\"]/label/div")).click();
+        $(By.xpath("//*[@id=\"mat-checkbox-6\"]/label/div")).click();
+        $(By.xpath("//*[@id=\"mat-checkbox-9\"]/label/div")).click();
+        $(By.xpath("//*[@id=\"mat-checkbox-12\"]/label/div")).click();
+        $(By.xpath("//*[@id=\"mat-checkbox-15\"]/label/div")).click();
+        $(By.xpath("//*[@id=\"mat-checkbox-18\"]/label/div")).click();
+        $(By.xpath("//*[@id=\"mat-checkbox-21\"]/label/div")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/app-manage/app-nav-root/div/app-role/app-role-card/div/app-role-form/form/div[2]/button")).click();
     }
     @After
