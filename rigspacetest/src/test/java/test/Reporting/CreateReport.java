@@ -6,13 +6,13 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.*;
 import static utilites.MatSelect.*;
-import static utilites.URL.*;
+import static utilites.testURL.*;
 
 public class CreateReport {
     @Before
     public void setUp() throws Exception {
         clearBrowserCookies();
-        testURL();
+        urlReporting();
         login("admin", "1");
     }
     @Test
