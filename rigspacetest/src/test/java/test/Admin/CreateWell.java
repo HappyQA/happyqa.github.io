@@ -6,12 +6,13 @@ import org.junit.After;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.MatSelect.*;
+import static utilites.testURL.*;
 
 public class CreateWell {
     @Before
     public void setUp () throws Exception {
         clearBrowserCookies();
-        open("http://standalone.rig.space/admin/");
+        urlAdmin();
         login("admin" , "1");
     }
     @Test

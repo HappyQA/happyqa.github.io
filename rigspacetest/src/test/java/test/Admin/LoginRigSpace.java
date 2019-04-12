@@ -6,12 +6,13 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 import static utilites.AuthorizationPage.login;
 import static utilites.AuthorizationPage.logout;
+import static utilites.testURL.*;
 
 public class LoginRigSpace {
     @Before
     public void setUp() throws Exception {
         clearBrowserCookies();
-        open("http://standalone.rig.space/admin");
+        urlAdmin();
     }
     @Test
     public void WrongLogin() {

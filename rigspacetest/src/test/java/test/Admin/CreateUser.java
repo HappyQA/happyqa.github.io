@@ -5,12 +5,13 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
+import static utilites.testURL.*;
 
 public class CreateUser {
     @Before
     public void setUp() throws Exception {
         clearBrowserCookies();
-        open("http://standalone.rig.space/admin/");
+        urlAdmin();
         login("admin", "1");
     }
     @Test
