@@ -24,9 +24,6 @@ public class CreateRole {
         $(By.xpath("//*[@id=\"mat-checkbox-6\"]/label/div")).click();
         $(By.xpath("//*[@id=\"mat-checkbox-9\"]/label/div")).click();
         $(By.xpath("//*[@id=\"mat-checkbox-12\"]/label/div")).click();
-        $(By.xpath("//*[@id=\"mat-checkbox-15\"]/label/div")).click();
-        $(By.xpath("//*[@id=\"mat-checkbox-18\"]/label/div")).click();
-        $(By.xpath("//*[@id=\"mat-checkbox-21\"]/label/div")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/app-manage/app-nav-root/div/app-role/app-role-card/div/app-role-form/form/div[2]/button")).click();
     }
     @After
