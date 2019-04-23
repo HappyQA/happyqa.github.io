@@ -15,6 +15,3 @@ public class testURL {
         open("http://testing.rig.space/analytics/");
     }
 }
-
-
-
