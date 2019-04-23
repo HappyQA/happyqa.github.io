@@ -1,3 +1,3 @@
-# happyqa.github.io
+# Autotests on Java and Python env
 
-This repo intended only for my work cases.
+This repo intended only for my work cases
