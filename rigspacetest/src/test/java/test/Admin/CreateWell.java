@@ -22,10 +22,10 @@ public class CreateWell {
         $(By.xpath("//*[@id=\"wells\"]/div/div[2]/a/span")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/app-wells/app-nav-root/div/app-well/app-well-card/div/app-well-form/form/div[1]/app-input/mat-form-field")).click();
         $(By.xpath("//*[@id=\"mat-input-0\"]")).sendKeys("Тестовая скважина");
-        selectMatContains("Месторождение", "Тестовые");
-        selectMatContains("Площадь", "Тестовые");
+        selectMatContains("Месторождение", "Тестовое");
+        selectMatContains("Площадь", "Тестовая");
         selectMatContains("Недропользователь", "Тестовые");
-        selectMatContains("Назначение", "Тестовые");
+        selectMatContains("Назначение", "Тестовое");
         $(By.xpath("//*[@id=\"main-content\"]/div/app-wells/app-nav-root/div/app-well/app-well-card/div/app-well-form/form/div[2]/button")).click();
     }
     @After
