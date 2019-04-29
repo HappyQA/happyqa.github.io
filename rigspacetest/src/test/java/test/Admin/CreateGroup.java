@@ -14,7 +14,6 @@ public class CreateGroup {
         urlAdmin();
         login("admin", "1");
     }
-
     @Test
     public void createGroup() {
         $(By.xpath("//*[@id=\"main-content\"]/div/app-manage/app-nav-root/nav/div/div/a[2]")).click();
@@ -24,7 +23,6 @@ public class CreateGroup {
         $(By.xpath("//*[@id=\"mat-checkbox-1\"]")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/app-manage/app-nav-root/div/app-group/app-group-card/div/app-group-form/form/div/button")).click();
     }
-
     @After
     public void tearDown() throws Exception {
         clearBrowserCookies();
