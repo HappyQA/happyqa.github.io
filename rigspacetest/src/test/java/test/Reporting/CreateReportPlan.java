@@ -21,7 +21,7 @@ public class CreateReportPlan {
         $(By.xpath("/html/body/app-root/lib-root/mat-sidenav-container/mat-sidenav/div/lib-nav-list/mat-nav-list/a[3]/div")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/ts-reports/div/div/button/span")).click();
         $(By.xpath("//*[@id=\"mat-radio-3\"]")).click();
-        selectMatContains("Мероприятие","1");
+        selectMatContains("Мероприятие","sad");
         $(By.xpath("//input[contains(@placeholder, 'Дата')]")).click();
         $(By.xpath("//input[contains(@placeholder, 'Дата')]")).sendKeys("04.04.2019");
         $(By.xpath("//input[contains(@placeholder, 'Номер')]")).click();
