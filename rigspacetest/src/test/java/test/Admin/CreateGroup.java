@@ -1,8 +1,11 @@
 package test.Admin;
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.conditions.Text;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.*;
 import static utilites.testURL.*;
@@ -11,7 +14,7 @@ public class CreateGroup {
     @Before
     public void setUp() throws Exception {
         clearBrowserCookies();
-        urlAdmin();
+        openAdminMainPage();
         login("admin", "1");
     }
     @Test

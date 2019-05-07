@@ -1,8 +1,11 @@
 package test.Reporting;
+import com.codeborne.selenide.Condition;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.*;
 import static utilites.MatSelect.*;
@@ -12,7 +15,7 @@ public class CreateReportPlan {
     @Before
     public void setUp() throws Exception {
         clearBrowserCookies();
-        urlReporting();
+        openReportingMainPage();
         login("admin", "1");
     }
     @Test
@@ -27,6 +30,8 @@ public class CreateReportPlan {
         $(By.xpath("//input[contains(@placeholder, 'Номер')]")).click();
         $(By.xpath("//input[contains(@placeholder, 'Номер')]")).sendKeys("666");
         $(By.xpath("//*[@id=\"mat-dialog-0\"]/ts-report-dialog/ts-report-form/form/div[3]/button[2]")).click();
+        //Verifaction
+        $(By.xpath("//planned-report-info")).shouldHave(matchesText("Рапорт по планированию"));
     }
     @After
     public void tearDown() throws Exception {

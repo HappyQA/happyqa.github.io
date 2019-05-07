@@ -12,11 +12,11 @@ public class CreateWell {
     @Before
     public void setUp () throws Exception {
         clearBrowserCookies();
-        urlAdmin();
+        openAdminMainPage();
         login("admin" , "1");
     }
     @Test
-    public void сreateWell (){
+    public void createWell (){
         $(By.xpath("//*[@id=\"main-content\"]/lib-toolbar/mat-toolbar/button")).click();
         $(By.xpath("/html/body/app-root/lib-root/mat-sidenav-container/mat-sidenav/div/lib-nav-list/mat-nav-list/a[2]/div/mat-icon")).click();
         $(By.xpath("//*[@id=\"wells\"]/div/div[2]/a/span")).click();

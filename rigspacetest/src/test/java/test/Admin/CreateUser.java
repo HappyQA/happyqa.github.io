@@ -11,7 +11,7 @@ public class CreateUser {
     @Before
     public void setUp() throws Exception {
         clearBrowserCookies();
-        urlAdmin();
+        openAdminMainPage();
         login("admin", "1");
     }
     @Test

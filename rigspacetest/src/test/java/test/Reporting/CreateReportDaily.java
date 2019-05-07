@@ -12,7 +12,7 @@ public class CreateReportDaily {
     @Before
     public void setUp() throws Exception {
         clearBrowserCookies();
-        urlReporting();
+        openReportingMainPage();
         login("admin", "1");
     }
     @Test

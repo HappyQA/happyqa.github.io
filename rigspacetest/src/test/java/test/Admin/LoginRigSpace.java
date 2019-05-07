@@ -12,7 +12,7 @@ public class LoginRigSpace {
     @Before
     public void setUp() throws Exception {
         clearBrowserCookies();
-        urlAdmin();
+        openAdminMainPage();
     }
     @Test
     public void WrongLogin() {
