@@ -1,11 +1,13 @@
 package test.Reporting;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.commands.ShouldBe;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.not;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.*;
 import static utilites.MatSelect.*;
@@ -24,14 +26,13 @@ public class CreateReportPlan {
         $(By.xpath("/html/body/app-root/lib-root/mat-sidenav-container/mat-sidenav/div/lib-nav-list/mat-nav-list/a[3]/div")).click();
         $(By.xpath("//*[@id=\"main-content\"]/div/ts-reports/div/div/button/span")).click();
         $(By.xpath("//*[@id=\"mat-radio-3\"]")).click();
-        selectMatContains("Мероприятие","Тестовое");
+        $(By.tagName("app-spinner")).shouldBe(not(visible));
+        selectMatContains("Мероприятие","666");
         $(By.xpath("//input[contains(@placeholder, 'Дата')]")).click();
         $(By.xpath("//input[contains(@placeholder, 'Дата')]")).sendKeys("04.04.2019");
         $(By.xpath("//input[contains(@placeholder, 'Номер')]")).click();
         $(By.xpath("//input[contains(@placeholder, 'Номер')]")).sendKeys("666");
-        $(By.xpath("//*[@id=\"mat-dialog-0\"]/ts-report-dialog/ts-report-form/form/div[3]/button[2]")).click();
-        //Verifaction
-//        $(By.xpath("//planned-report-info")).shouldHave(matchesText("Рапорт по планированию"));
+        $(By.xpath("//button[contains(@type, 'submit')]")).click();
     }
     @After
     public void tearDown() throws Exception {
