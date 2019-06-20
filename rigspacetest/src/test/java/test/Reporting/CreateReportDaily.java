@@ -13,9 +13,9 @@ import static utilites.testURL.*;
 
 public class CreateReportDaily {
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         clearBrowserCookies();
-        openReportingMainPage();
+        openReportingModule();
         login("admin", "1");
     }
     @Test
@@ -32,7 +32,7 @@ public class CreateReportDaily {
         $(By.xpath("//button[contains(@type, 'submit')]")).click();
     }
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         clearBrowserCookies();
         close();
     }

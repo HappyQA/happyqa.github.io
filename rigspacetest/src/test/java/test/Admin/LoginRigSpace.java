@@ -10,9 +10,9 @@ import static utilites.testURL.*;
 
 public class LoginRigSpace {
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         clearBrowserCookies();
-        openAdminMainPage();
+        openAdminModule();
     }
     @Test
     public void WrongLogin() {

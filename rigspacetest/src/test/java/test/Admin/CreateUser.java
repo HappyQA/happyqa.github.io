@@ -9,14 +9,14 @@ import static utilites.AuthorizationPage.login;
 import static utilites.testURL.*;
 
 /**
-*   @autor a.stupin
+*   autor a.stupin
 */
 
 public class CreateUser {
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         clearBrowserCookies();
-        openAdminMainPage();
+        openAdminModule();
         login("admin", "1");
     }
     @Test
@@ -37,7 +37,7 @@ public class CreateUser {
         $(By.xpath("//*[@id=\"cdk-overlay-2\"]/snack-bar-container")).shouldBe(Condition.visible);
     }
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         clearBrowserCookies();
         close();
     }

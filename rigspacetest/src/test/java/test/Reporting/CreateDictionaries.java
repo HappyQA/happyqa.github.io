@@ -4,14 +4,14 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
-import static utilites.testURL.openAdminMainPage;
+import static utilites.testURL.openAdminModule;
 
 public class CreateDictionaries {
     //Open admin page authorization
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         clearBrowserCookies();
-        openAdminMainPage();
+        openAdminModule();
         login("admin", "1");
     }
     @Test

@@ -10,9 +10,9 @@ import static utilites.testURL.*;
 
 public class CreateWell {
     @Before
-    public void setUp () throws Exception {
+    public void setUp () {
         clearBrowserCookies();
-        openAdminMainPage();
+        openAdminModule();
         login("admin" , "1");
     }
     @Test
@@ -29,7 +29,7 @@ public class CreateWell {
         $(By.xpath("//*[@id=\"main-content\"]/div/app-wells/app-nav-root/div/app-well/app-well-card/div/app-well-form/form/div[2]/button")).click();
     }
     @After
-    public void tearDown () throws Exception {
+    public void tearDown () {
         clearBrowserCookies();
         close();
     }
