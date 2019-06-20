@@ -4,9 +4,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-
-import static com.codeborne.selenide.Condition.not;
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
 import static utilites.testURL.*;
