@@ -25,7 +25,7 @@ public class CreateUser {
         $(By.xpath("//*[@id=\"users\"]/div/div[2]/a")).click();
         $(By.id("username")).sendKeys("Automata User");
         $(By.xpath("//input[contains(@placeholder, 'Фамилия')]")).sendKeys("User");
-        $(By.xpath("//input[contains(@placeholder, 'Имя')]")).sendKeys("From");
+        $(By.xpath("//input[@placeholder='Имя']")).sendKeys("From");
         $(By.xpath("//input[contains(@placeholder, 'Отчество')]")).sendKeys("Autotest's");
         $(By.xpath("//input[contains(@placeholder, 'Электронная почта')]")).sendKeys("2B@tetra-soft.ru");
         $(By.xpath("//input[contains(@placeholder, 'Телефон')]")).sendKeys("+79246666666");
@@ -35,7 +35,7 @@ public class CreateUser {
         $(By.xpath("//textarea[contains(@placeholder, 'Описание')]")).sendKeys("Clean Code Production");
         $(By.xpath("//*/button/span[contains(text(), 'Сохранить')]")).click();
         //Checking if it real create?
-        $(By.xpath("//*[@id=\"cdk-overlay-2\"]/snack-bar-container")).shouldBe(Condition.visible);
+        $(By.xpath("//snack-bar-container")).shouldBe(Condition.visible).shouldHave(Condition.text("Изменения сохранены"));
     }
     @After
     public void tearDown() {
