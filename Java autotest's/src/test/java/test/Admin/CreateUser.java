@@ -24,6 +24,8 @@ public class CreateUser {
         //Adding info in all fields
         $(By.xpath("//*[@id=\"users\"]/div/div[2]/a")).click();
         $(By.id("username")).sendKeys("Automata User");
+        $(By.xpath("//mat-slide-toggle[contains(@id, 'mat-slide-toggle-1')]")).click();
+        $(By.id("password")).sendKeys("secret");
         $(By.xpath("//input[contains(@placeholder, 'Фамилия')]")).sendKeys("User");
         $(By.xpath("//input[@placeholder='Имя']")).sendKeys("From");
         $(By.xpath("//input[contains(@placeholder, 'Отчество')]")).sendKeys("Autotest's");
@@ -35,7 +37,8 @@ public class CreateUser {
         $(By.xpath("//textarea[contains(@placeholder, 'Описание')]")).sendKeys("Clean Code Production");
         $(By.xpath("//*/button/span[contains(text(), 'Сохранить')]")).click();
         //Checking if it real create?
-        $(By.xpath("//snack-bar-container")).shouldBe(Condition.visible).shouldHave(Condition.text("Изменения сохранены"));
+        $(By.xpath("//snack-bar-container"))
+                .shouldBe(Condition.visible).shouldHave(Condition.text("Изменения сохранены"));
     }
     @After
     public void tearDown() {
