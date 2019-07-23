@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
 import static utilites.testURL.*;
 
-
 /**
  *   autor a.stupin
  */
