@@ -1,5 +1,6 @@
 package utilites;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.refresh;
 
 public class testURL {
 
