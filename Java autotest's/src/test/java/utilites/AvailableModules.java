@@ -1,9 +1,8 @@
 package utilites;
-import com.codeborne.selenide.Condition;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
+import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
 import static utilites.testURL.*;
@@ -24,7 +23,8 @@ public class AvailableModules {
     public void AvailableAdmin () {
         openAdminModule();
         login("admin","1");
-        $(By.xpath("//span[contains(text(), 'Управление пользователями')]")).shouldBe(Condition.visible);
+        $("title").
+                shouldHave(attribute("text" , "Rigspace Administrative Panel"));
         refreshPageForAdmin();
     }
     //if Reporting module is available?
@@ -32,7 +32,8 @@ public class AvailableModules {
     public void AvailableReporting () {
         openReportingModule();
         login("admin", "1");
-        $(By.xpath("//button[contains(text(), 'Название')]")).shouldBe(Condition.visible);
+        $("title").
+                shouldHave(attribute("text" , "RigSpace Reporting"));
         refreshPageForReporting();
     }
     //if Equipment module is available?
@@ -40,7 +41,8 @@ public class AvailableModules {
     public void AvailableEquipment () {
         openEquipmentModule();
         login("admin", "1");
-        $(By.xpath("//span[contains(text(), 'Схема расположения оборудования')]")).shouldBe(Condition.visible);
+        $("title").
+                shouldHave(attribute("text" , "Rigspace Equipment"));
         refreshPageForEquipment();
     }
     //if Analytics module is available?
@@ -48,7 +50,8 @@ public class AvailableModules {
     public void AvailableAnalytics () {
         openAnalyticsModule();
         login("admin", "1");
-        $(By.xpath("//span[contains(text(), 'Избранные')]")).shouldBe(Condition.visible);
+        $("title").
+                shouldHave(attribute("text" , "Rigspace Analytics"));
         refreshPageForAnalytics();
     }
     @After
