@@ -65,5 +65,6 @@ public class CreateSecurityGroup {
 
         //Step 4: Adding role with all attributes
         $(By.xpath("//span[contains(text(), 'Роли')]")).click();
+
     }
 }

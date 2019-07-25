@@ -19,4 +19,3 @@ public class CreateDictionaries {
         $(By.xpath("//button[contains(@class, 'mat-icon-button ng-tns-c4-1')]")).click();
     }
 }
-//*[@id="main-content"]/lib-toolbar/mat-toolbar/button

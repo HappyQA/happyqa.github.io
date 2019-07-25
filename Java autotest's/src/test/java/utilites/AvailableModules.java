@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
 import static utilites.testURL.*;
+import static utilites.RefreshPageForCheck.*;
 
 /**
  *   autor a.stupin
@@ -24,6 +25,7 @@ public class AvailableModules {
         openAdminModule();
         login("admin","1");
         $(By.xpath("//span[contains(text(), 'Управление пользователями')]")).shouldBe(Condition.visible);
+        refreshPageForAdmin();
     }
     //if Reporting module is available?
     @Test
@@ -31,6 +33,7 @@ public class AvailableModules {
         openReportingModule();
         login("admin", "1");
         $(By.xpath("//button[contains(text(), 'Название')]")).shouldBe(Condition.visible);
+        refreshPageForReporting();
     }
     //if Equipment module is available?
     @Test
@@ -38,6 +41,7 @@ public class AvailableModules {
         openEquipmentModule();
         login("admin", "1");
         $(By.xpath("//span[contains(text(), 'Схема расположения оборудования')]")).shouldBe(Condition.visible);
+        refreshPageForEquipment();
     }
     //if Analytics module is available?
     @Test
@@ -45,6 +49,7 @@ public class AvailableModules {
         openAnalyticsModule();
         login("admin", "1");
         $(By.xpath("//span[contains(text(), 'Избранные')]")).shouldBe(Condition.visible);
+        refreshPageForAnalytics();
     }
     @After
     public void tearDown() {
