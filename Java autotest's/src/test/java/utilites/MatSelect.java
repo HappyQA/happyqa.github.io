@@ -2,6 +2,10 @@ package utilites;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
+/**
+ *   autor a.stupin
+ */
+
 public class MatSelect {
     public static void  selectMatContains (String placeholder, String value) {
         $(By.xpath("//mat-select[contains(@aria-label, '" + placeholder + "')]")).click();

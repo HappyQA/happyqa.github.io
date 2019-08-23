@@ -5,6 +5,10 @@ import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.refresh;
 
+/**
+ *   autor a.stupin
+ */
+
 public class RefreshPageForCheck {
     public static void refreshPageForAdmin () {
         refresh();

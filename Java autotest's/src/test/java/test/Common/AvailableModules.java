@@ -1,11 +1,11 @@
-package utilites;
+package test.Common;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
-import static utilites.testURL.*;
+import static utilites.TestURL.*;
 import static utilites.RefreshPageForCheck.*;
 
 /**

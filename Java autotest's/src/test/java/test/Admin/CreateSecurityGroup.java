@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
 import static utilites.ButtonPlus.appGroupObject;
 import static utilites.ButtonPlus.appGroupUsers;
-import static utilites.testURL.*;
+import static utilites.TestURL.*;
 
 /**
  *   autor a.stupin

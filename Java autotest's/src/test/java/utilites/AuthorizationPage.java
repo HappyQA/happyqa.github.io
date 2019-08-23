@@ -3,6 +3,10 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.refresh;
 
+/**
+ *   autor a.stupin
+ */
+
 public class AuthorizationPage {
     public static void login (String login, String pass) {
         $(By.name("username")).sendKeys(login);

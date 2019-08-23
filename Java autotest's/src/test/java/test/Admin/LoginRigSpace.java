@@ -6,7 +6,11 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 import static utilites.AuthorizationPage.login;
 import static utilites.AuthorizationPage.logout;
-import static utilites.testURL.*;
+import static utilites.TestURL.*;
+
+/**
+ *   autor a.stupin
+ */
 
 public class LoginRigSpace {
     @Before

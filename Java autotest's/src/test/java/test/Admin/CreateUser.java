@@ -6,7 +6,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
-import static utilites.testURL.*;
+import static utilites.TestURL.*;
+import static utilites.LocatorPlaceholder.*;
 
 /**
 *   autor a.stupin
@@ -26,7 +27,7 @@ public class CreateUser {
         $(By.id("username")).sendKeys("Automata User");
         $(By.xpath("//mat-slide-toggle[contains(@id, 'mat-slide-toggle-1')]")).click();
         $(By.id("password")).sendKeys("secret");
-        $(By.xpath("//input[contains(@placeholder, 'Фамилия')]")).sendKeys("User");
+        placeholder("Фамилия");
         $(By.xpath("//input[@placeholder='Имя']")).sendKeys("From");
         $(By.xpath("//input[contains(@placeholder, 'Отчество')]")).sendKeys("Autotest's");
         $(By.xpath("//input[contains(@placeholder, 'Электронная почта')]")).sendKeys("2B@tetra-soft.ru");
