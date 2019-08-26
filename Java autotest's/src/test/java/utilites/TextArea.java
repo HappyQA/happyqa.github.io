@@ -6,8 +6,8 @@ import static com.codeborne.selenide.Selenide.$;
  *   autor a.stupin
  */
 
-public class LocatorPlaceholder {
-    public static void placeholder (String placeholder, String name) {
+public class TextArea {
+    public static void textarea (String placeholder, String name) {
         $(By.xpath("//input[contains(@placeholder, '" + placeholder + "')]")).sendKeys(name);
     }
 }

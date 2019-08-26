@@ -2,6 +2,8 @@ package test.Common;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
+
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Selenide.*;
 import static utilites.AuthorizationPage.login;
@@ -59,4 +61,5 @@ public class AvailableModules {
         clearBrowserCookies();
         close();
     }
+
 }
