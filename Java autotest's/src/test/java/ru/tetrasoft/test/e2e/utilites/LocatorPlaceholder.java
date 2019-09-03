@@ -8,6 +8,9 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LocatorPlaceholder {
     public static void setFieldPlaceholder(String placeholder, String name) {
-        $(By.xpath("//input[contains(@placeholder, '" + placeholder + "')]")).sendKeys(name);
+        $(By.xpath("//input[@placeholder='" + placeholder + "']")).sendKeys(name);
+    }
+    public static void clearFieldPlaceholder(String placeholder) {
+        $(By.xpath("//input[@placeholder='" + placeholder + "']")).clear();
     }
 }

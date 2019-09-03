@@ -16,7 +16,7 @@ public class ButtonPlus {
     public static void appGroupRole () {
         $(By.xpath("//*[@id=\"main-content\"]/div/app-manage/app-nav-root/div/app-group/app-group-card/div/div/app-group-role/div/a")).click();
     }
-    public static void usersButtonPlus () {
+    public static void createUsersButtonClick() {
         $(By.xpath("//*[@id=\"users\"]/div/div[2]/a")).click();
     }
     public static void groupsButtonPlus () {

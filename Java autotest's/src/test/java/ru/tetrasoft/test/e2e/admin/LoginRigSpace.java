@@ -1,7 +1,7 @@
 package ru.tetrasoft.test.e2e.admin;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import ru.tetrasoft.test.e2e.utilites.AuthorizationPage;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
@@ -12,7 +12,7 @@ import static ru.tetrasoft.test.e2e.utilites.TestURL.*;
  */
 
 public class LoginRigSpace {
-    @Before
+    @BeforeEach
     public void setUp() {
         clearBrowserCookies();
         openAdminModule();

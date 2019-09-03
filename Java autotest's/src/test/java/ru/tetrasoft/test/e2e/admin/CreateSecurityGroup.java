@@ -1,8 +1,8 @@
 package ru.tetrasoft.test.e2e.admin;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import ru.tetrasoft.test.e2e.utilites.AuthorizationPage;
 import com.codeborne.selenide.Condition;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 import static ru.tetrasoft.test.e2e.utilites.ButtonPlus.appGroupObject;
@@ -14,7 +14,7 @@ import static ru.tetrasoft.test.e2e.utilites.TestURL.*;
  */
 
 public class CreateSecurityGroup {
-    @Before
+    @BeforeEach
     public void setUp() {
         clearBrowserCookies();
         //open Url qa.rig.space/admin

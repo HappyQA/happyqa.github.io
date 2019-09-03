@@ -13,10 +13,10 @@ public class TestURL {
     public static void openReportingModule () {
         open("http://qa.rig.space/reporting/");
     }
-    public static void openEquipmentModule (){
+    public static void openEquipmentModule () {
         open("http://qa.rig.space/equipment/");
     }
-    public static void openAnalyticsModule (){
+    public static void openAnalyticsModule () {
         open("http://qa.rig.space/analytics/");
     }
 }
