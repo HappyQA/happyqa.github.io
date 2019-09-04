@@ -1,5 +1,5 @@
 package ru.tetrasoft.test.e2e.admin;
-import com.codeborne.selenide.Condition;
+import static ru.tetrasoft.test.e2e.utilites.HoverButtons.*;
 import static ru.tetrasoft.test.e2e.utilites.AuthorizationPage.login;
 import static ru.tetrasoft.test.e2e.utilites.ButtonSave.saveButtonClick;
 import static ru.tetrasoft.test.e2e.utilites.TextArea.*;
@@ -14,6 +14,8 @@ import static ru.tetrasoft.test.e2e.utilites.LocatorPlaceholder.*;
 import static ru.tetrasoft.test.e2e.utilites.ButtonPlus.*;
 import static ru.tetrasoft.test.e2e.utilites.Toggles.*;
 import static ru.tetrasoft.test.e2e.utilites.Credentials.*;
+import static ru.tetrasoft.test.e2e.utilites.SnackBarChecker.*;
+import static ru.tetrasoft.test.e2e.utilites.MatTable.*;
 
 /**
 *   autor a.stupin
@@ -44,30 +46,23 @@ public class userCRUD {
         setFieldPlaceholder("Должность", "QA Engineer");
         setFieldTextarea("Описание", "Clean Code Production");
         saveButtonClick();
-        $(By.xpath("//snack-bar-container"))
-                .shouldBe(Condition.visible)
-                .shouldHave(Condition.text("Изменения сохранены"));
+        checkContainsInSnackBar("Изменения сохранены");
     }
 
     @Test
     public void renameUser () {
-        $(By.xpath("//*[@id=\"users\"]/div/div[1]/mat-table/mat-row[2]/mat-cell[1]/div")).click();
+        userInMatTable();
         clearFieldPlaceholder("Фамилия");
         setFieldPlaceholder("Фамилия", "Renamed name :)");
         saveButtonClick();
-        $(By.xpath("//snack-bar-container"))
-                .shouldBe(Condition.visible)
-                .shouldHave(Condition.text("Изменения сохранены"));
+        checkContainsInSnackBar("Изменения сохранены");
     }
 
     @Test
     public void blockUser () {
-        $(By.xpath("//*[@id=\"users\"]/div/div[1]/mat-table/mat-row[2]/mat-cell[6]/button"))
-                .hover().click();
+        hoverButtonToUserLock();
         $(By.xpath("//span[contains(text(), 'Заблокировать')]")).click();
-        $(By.xpath("//simple-snack-bar"))
-                .shouldBe(Condition.visible)
-                .shouldHave(Condition.text("Пользователь Renamed name :) From заблокирован"));
+        checkContainsInSimpleSnackBar("Пользователь Renamed name :) From заблокирован");
     }
 
     @AfterEach
