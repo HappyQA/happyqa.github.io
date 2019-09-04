@@ -1,4 +1,4 @@
-package ru.tetrasoft.test.e2e.admin;
+package ru.tetrasoft.test.e2e.common;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.tetrasoft.test.e2e.utilites.AuthorizationPage;

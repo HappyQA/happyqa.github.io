@@ -20,9 +20,9 @@ public class ButtonPlus {
         $(By.xpath("//*[@id=\"users\"]/div/div[2]/a")).click();
     }
     public static void groupsButtonPlus () {
-        $(By.xpath("//*[@id=\"groups\"]/div/div[2]/a")).click();
+        $(By.xpath("//*[@id=\"groups\"]/div/div[1]/a")).click();
     }
     public static void rolesButtonPlus () {
-        $(By.xpath("//*[@id=\"roles\"]/div/div[2]/a")).click();
+        $(By.xpath("//*[@id=\"roles\"]/div/div[1]/a")).click();
     }
 }

@@ -20,6 +20,7 @@ import static ru.tetrasoft.test.e2e.utilites.Credentials.*;
 */
 
 public class userCRUD {
+
     @BeforeEach
     public void setUp() {
         clearBrowserCookies();
@@ -44,7 +45,8 @@ public class userCRUD {
         setFieldTextarea("Описание", "Clean Code Production");
         saveButtonClick();
         $(By.xpath("//snack-bar-container"))
-                .shouldBe(Condition.visible).shouldHave(Condition.text("Изменения сохранены"));
+                .shouldBe(Condition.visible)
+                .shouldHave(Condition.text("Изменения сохранены"));
     }
 
     @Test
@@ -54,16 +56,18 @@ public class userCRUD {
         setFieldPlaceholder("Фамилия", "Renamed name :)");
         saveButtonClick();
         $(By.xpath("//snack-bar-container"))
-                .shouldBe(Condition.visible).shouldHave(Condition.text("Изменения сохранены"));
+                .shouldBe(Condition.visible)
+                .shouldHave(Condition.text("Изменения сохранены"));
     }
 
     @Test
     public void blockUser () {
-        $(By.xpath("//*[@id=\"users\"]/div/div[1]/mat-table/mat-row[2]/mat-cell[6]/button")).click();
-        $(By.xpath("//*[@id=\"cdk-overlay-6\"]/div/div/button/span")).click();
-        $(By.xpath("//snack-bar-container"))
+        $(By.xpath("//*[@id=\"users\"]/div/div[1]/mat-table/mat-row[2]/mat-cell[6]/button"))
+                .hover().click();
+        $(By.xpath("//span[contains(text(), 'Заблокировать')]")).click();
+        $(By.xpath("//simple-snack-bar"))
                 .shouldBe(Condition.visible)
-                .shouldHave(Condition.text("Пользователь Renamed name :) From разблокирован"));
+                .shouldHave(Condition.text("Пользователь Renamed name :) From заблокирован"));
     }
 
     @AfterEach

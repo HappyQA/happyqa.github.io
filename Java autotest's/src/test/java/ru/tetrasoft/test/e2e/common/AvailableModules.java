@@ -3,10 +3,11 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.tetrasoft.test.e2e.utilites.BaseTest;
-import ru.tetrasoft.test.e2e.utilites.AuthorizationPage;
 import ru.tetrasoft.test.e2e.utilites.RefreshPageForCheck;
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Selenide.*;
+import static ru.tetrasoft.test.e2e.utilites.AuthorizationPage.login;
+import static ru.tetrasoft.test.e2e.utilites.RefreshPageForCheck.refreshPageForAnalytics;
 import static ru.tetrasoft.test.e2e.utilites.TestURL.*;
 
 /**
@@ -23,7 +24,7 @@ public class AvailableModules extends BaseTest {
     @Test
     public void AvailableAdmin () {
         openAdminModule();
-        AuthorizationPage.login("admin","1");
+        login("admin","1");
         $("title").
                 shouldHave(attribute("text" , "Rigspace Administrative Panel"));
         RefreshPageForCheck.refreshPageForAdmin();
@@ -32,7 +33,7 @@ public class AvailableModules extends BaseTest {
     @Test
     public void AvailableReporting () {
         openReportingModule();
-        AuthorizationPage.login("admin", "1");
+        login("admin", "1");
         $("title").
                 shouldHave(attribute("text" , "RigSpace Reporting"));
         RefreshPageForCheck.refreshPageForReporting();
@@ -41,7 +42,7 @@ public class AvailableModules extends BaseTest {
     @Test
     public void AvailableEquipment () {
         openEquipmentModule();
-        AuthorizationPage.login("admin", "1");
+        login("admin", "1");
         $("title").
                 shouldHave(attribute("text" , "Rigspace Equipment"));
         RefreshPageForCheck.refreshPageForEquipment();
@@ -50,10 +51,10 @@ public class AvailableModules extends BaseTest {
     @Test
     public void AvailableAnalytics () {
         openAnalyticsModule();
-        AuthorizationPage.login("admin", "1");
+        login("admin", "1");
         $("title").
                 shouldHave(attribute("text" , "Rigspace Analytics"));
-        RefreshPageForCheck.refreshPageForAnalytics();
+        refreshPageForAnalytics();
     }
     @AfterEach
     public void tearDown() {
