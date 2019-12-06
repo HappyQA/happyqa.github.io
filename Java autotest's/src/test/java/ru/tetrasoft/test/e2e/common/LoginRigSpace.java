@@ -3,8 +3,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.tetrasoft.test.e2e.utilites.AuthorizationPage;
 import org.openqa.selenium.By;
+
+import java.net.MalformedURLException;
+
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
+//import static ru.tetrasoft.test.e2e.utilites.OpenInsideSelenoid.openAdminInsideSelenoid;
 import static ru.tetrasoft.test.e2e.utilites.TestURL.*;
 
 /**
@@ -13,9 +17,9 @@ import static ru.tetrasoft.test.e2e.utilites.TestURL.*;
 
 public class LoginRigSpace {
     @BeforeEach
-    public void setUp() {
+    public void setUp() throws MalformedURLException {
         clearBrowserCookies();
-        openAdminModule();
+    //    openAdminInsideSelenoid();
     }
     @Test
     public void WrongLogin() {
