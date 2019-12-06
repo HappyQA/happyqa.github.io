@@ -7,6 +7,13 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URI;
+
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 import static ru.tetrasoft.test.e2e.utilites.TestURL.*;
@@ -24,8 +31,17 @@ import static ru.tetrasoft.test.e2e.utilites.MatTable.*;
 public class userCRUD {
 
     @BeforeEach
-    public void setUp() {
+    public void setUp() throws MalformedURLException {
         clearBrowserCookies();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setBrowserName("chrome");
+        capabilities.setVersion("78.0");
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", false);
+        RemoteWebDriver driver = new RemoteWebDriver(
+                URI.create("http://localhost:4444/wd/hub").toURL(),
+                capabilities
+        );
         openAdminModule();
         login("admin", "1");
     }
@@ -65,9 +81,9 @@ public class userCRUD {
         checkContainsInSimpleSnackBar("Пользователь Renamed name :) From заблокирован");
     }
 
-    @AfterEach
-    public void tearsDown () {
-        clearBrowserCookies();
-        close();
-    }
+//    @AfterEach
+//    public void tearsDown () {
+//        clearBrowserCookies();
+//        close();
+//    }
 }
