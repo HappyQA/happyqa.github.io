@@ -2,13 +2,8 @@ package ru.tetrasoft.test.e2e.common;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import ru.tetrasoft.test.e2e.utilites.BaseTest;
 import ru.tetrasoft.test.e2e.utilites.RefreshPageForCheck;
-
-import java.net.MalformedURLException;
-import java.net.URI;
 
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Selenide.*;
@@ -22,17 +17,9 @@ import static ru.tetrasoft.test.e2e.utilites.TestURL.*;
 
 
 //Checking if all module's are available right now
-public class AvailableModules extends BaseTest {
+public class AvailableModules {
     @BeforeEach
-    public void setUp() throws MalformedURLException {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setBrowserName("chrome");
-        capabilities.setVersion("78.0");
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", false);
-
-        RemoteWebDriver driver = new RemoteWebDriver(URI.create("http://192.168.0.8:4444/wd/hub").toURL(),
-                capabilities);
+    public void setUp()  {
         clearBrowserCookies();
     }
     //if Admin module is available?
