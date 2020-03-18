@@ -17,9 +17,8 @@ import static ru.tetrasoft.test.e2e.utilites.TestURL.*;
 
 public class LoginRigSpace {
     @BeforeEach
-    public void setUp() throws MalformedURLException {
+    public void setUp()  {
         clearBrowserCookies();
-    //    openAdminInsideSelenoid();
     }
     @Test
     public void WrongLogin() {

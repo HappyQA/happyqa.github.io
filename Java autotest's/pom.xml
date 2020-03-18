@@ -42,16 +42,17 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M3</version>
                 <configuration>
-                    <parallel>all</parallel>
-                    <threadCountMethods>2</threadCountMethods>
-                    <forkCount>3</forkCount>
+<!--                    <parallel>all</parallel>-->
+<!--                    <threadCountMethods>2</threadCountMethods>-->
+                    <forkCount>0</forkCount>
                     <reuseForks>true</reuseForks>
                     <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                         <includes>
-<!--                        <include>test/**/*</include>-->
+<!--                            <include>test/**/*</include>-->
                             <include>SelenoidTest</include>
+                            <include>AvailableModules</include>
                         </includes>
-<!--                    <useSystemClassLoader>false</useSystemClassLoader>-->
+                    <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
             </plugin>
         </plugins>

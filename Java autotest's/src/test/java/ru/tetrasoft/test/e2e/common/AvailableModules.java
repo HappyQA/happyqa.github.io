@@ -8,7 +8,7 @@ import ru.tetrasoft.test.e2e.utilites.RefreshPageForCheck;
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Selenide.*;
 import static ru.tetrasoft.test.e2e.utilites.AuthorizationPage.login;
-import static ru.tetrasoft.test.e2e.utilites.RefreshPageForCheck.refreshPageForAnalytics;
+import static ru.tetrasoft.test.e2e.utilites.RefreshPageForCheck.*;
 import static ru.tetrasoft.test.e2e.utilites.TestURL.*;
 
 /**
@@ -29,7 +29,7 @@ public class AvailableModules {
         login("qa","123456");
         $("title").
                 shouldHave(attribute("text" , "Rigspace Administrative Panel"));
-        RefreshPageForCheck.refreshPageForAdmin();
+        refreshPageForAdmin();
     }
     //if Reporting module is available?
     @Test
@@ -38,7 +38,7 @@ public class AvailableModules {
         login("qa", "123456");
         $("title").
                 shouldHave(attribute("text" , "RigSpace Reporting"));
-        RefreshPageForCheck.refreshPageForReporting();
+        refreshPageForReporting();
     }
     //if Equipment module is available?
     @Test
@@ -47,7 +47,7 @@ public class AvailableModules {
         login("qa", "123456");
         $("title").
                 shouldHave(attribute("text" , "Rigspace Equipment"));
-        RefreshPageForCheck.refreshPageForEquipment();
+        refreshPageForEquipment();
     }
     //if Analytics module is available?
     @Test
@@ -63,5 +63,4 @@ public class AvailableModules {
         clearBrowserCookies();
         close();
     }
-
 }

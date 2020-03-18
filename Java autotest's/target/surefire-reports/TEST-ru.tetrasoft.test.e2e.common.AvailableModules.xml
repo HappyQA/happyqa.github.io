@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ru.tetrasoft.test.e2e.common.AvailableModules" time="92.828" tests="4" errors="0" skipped="0" failures="1">
+  <properties/>
+  <testcase name="AvailableReporting" classname="ru.tetrasoft.test.e2e.common.AvailableModules" time="36.189"/>
+  <testcase name="AvailableEquipment" classname="ru.tetrasoft.test.e2e.common.AvailableModules" time="24.438">
+    <failure message="Element should have attribute text=&quot;Rigspace Equipment&quot; {title}&#10;Element: &apos;StaleElementReferenceException: stale element reference: element is not attached to the page document&apos;&#10;Actual value: StaleElementReferenceException: stale element refe&#10;Screenshot: file:/home/happyqa/work/repo/happyqa.github.io/Java%20autotest&apos;s/build/reports/tests/1584546374588.0.png&#10;Page source: file:/home/happyqa/work/repo/happyqa.github.io/Java%20autotest&apos;s/build/reports/tests/1584546374588.0.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">com.codeborne.selenide.ex.ElementShould: 
+Element should have attribute text="Rigspace Equipment" {title}
+Element: 'StaleElementReferenceException: stale element reference: element is not attached to the page document'
+Actual value: StaleElementReferenceException: stale element refe
+Screenshot: file:/home/happyqa/work/repo/happyqa.github.io/Java%20autotest's/build/reports/tests/1584546374588.0.png
+Page source: file:/home/happyqa/work/repo/happyqa.github.io/Java%20autotest's/build/reports/tests/1584546374588.0.html
+Timeout: 4 s.
+	at ru.tetrasoft.test.e2e.common.AvailableModules.AvailableEquipment(AvailableModules.java:49)
+</failure>
+    <system-err><![CDATA[36168 [main] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+Mar 18, 2020 6:46:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+45062 [main] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1366x768
+45187 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=79.0.3945.79 Platform=LINUX
+45187 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.9.0
+45187 [main] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on LINUX (7562487a3eb9b11fdb355ae98b0954f5)
+60541 [main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 1 -> RemoteWebDriver: chrome on LINUX (7562487a3eb9b11fdb355ae98b0954f5)
+60542 [Thread-7] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Trying to close the browser RemoteWebDriver ...
+60602 [main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 1 in 60 ms
+]]></system-err>
+  </testcase>
+  <testcase name="AvailableAdmin" classname="ru.tetrasoft.test.e2e.common.AvailableModules" time="17.105"/>
+  <testcase name="AvailableAnalytics" classname="ru.tetrasoft.test.e2e.common.AvailableModules" time="15.08"/>
+</testsuite>

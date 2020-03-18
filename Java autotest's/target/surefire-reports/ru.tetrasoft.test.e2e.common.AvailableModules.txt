@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: ru.tetrasoft.test.e2e.common.AvailableModules
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 92.828 s <<< FAILURE! - in ru.tetrasoft.test.e2e.common.AvailableModules
+AvailableEquipment  Time elapsed: 24.438 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementShould: 
+Element should have attribute text="Rigspace Equipment" {title}
+Element: 'StaleElementReferenceException: stale element reference: element is not attached to the page document'
+Actual value: StaleElementReferenceException: stale element refe
+Screenshot: file:/home/happyqa/work/repo/happyqa.github.io/Java%20autotest's/build/reports/tests/1584546374588.0.png
+Page source: file:/home/happyqa/work/repo/happyqa.github.io/Java%20autotest's/build/reports/tests/1584546374588.0.html
+Timeout: 4 s.
+	at ru.tetrasoft.test.e2e.common.AvailableModules.AvailableEquipment(AvailableModules.java:49)
+
